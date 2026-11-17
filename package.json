@@ -1,0 +1,17 @@
+{
+  "name": "beauty-home-services",
+  "version": "1.0.0",
+  "description": "Beauty home services booking app using Node.js, Express and DynamoDB",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "engines": { "node": ">=20" },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.800.0",
+    "@aws-sdk/lib-dynamodb": "^3.800.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  }
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Book trusted beauty services at your home.">
+  <title>GlowAtHome | Beauty Home Services</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-mark">✦</span> GlowAtHome</a>
+    <a class="top-link" href="#booking">Book an appointment</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">BEAUTY, AT YOUR DOORSTEP</p>
+        <h1>Your glow-up.<br><span>Your place.</span></h1>
+        <p class="hero-text">Professional beauty services in the comfort of your home. Choose a service, pick a date and send your booking request.</p>
+        <a class="primary-btn" href="#booking">Book a service <span>→</span></a>
+        <div class="trust"><span>✦</span> Simple booking · Personal care · At-home comfort</div>
+      </div>
+      <div class="hero-art" aria-label="Beauty services illustration">
+        <div class="art-circle"></div>
+        <div class="art-card">
+          <div class="art-icon">✿</div>
+          <strong>A little care goes<br> a long way.</strong>
+          <small>Make time for yourself</small>
+        </div>
+        <div class="floating f1">♡ Self-care</div>
+        <div class="floating f2">✦ Feel beautiful</div>
+      </div>
+    </section>
+
+    <section class="services section">
+      <div class="section-heading">
+        <p class="eyebrow">OUR SERVICES</p>
+        <h2>Choose your moment</h2>
+        <p>Beauty essentials, delivered to your home.</p>
+      </div>
+      <div class="service-grid">
+        <article class="service-card"><div class="service-icon pink">✿</div><h3>Facial</h3><p>A refreshing facial care session.</p><button class="choose" data-service="Facial">Choose service</button></article>
+        <article class="service-card"><div class="service-icon peach">✂</div><h3>Hair Styling</h3><p>Style your hair for your special day.</p><button class="choose" data-service="Hair Styling">Choose service</button></article>
+        <article class="service-card"><div class="service-icon lilac">♕</div><h3>Bridal Makeup</h3><p>Get ready for your memorable moments.</p><button class="choose" data-service="Bridal Makeup">Choose service</button></article>
+        <article class="service-card"><div class="service-icon yellow">♡</div><h3>Manicure & Pedicure</h3><p>Care for your hands and feet.</p><button class="choose" data-service="Manicure & Pedicure">Choose service</button></article>
+      </div>
+    </section>
+
+    <section class="booking-section section" id="booking">
+      <div class="booking-intro">
+        <p class="eyebrow">LET'S GET YOU BOOKED</p>
+        <h2>Book your home<br>beauty session</h2>
+        <p>Share your details and preferred date. Your request will be saved so it can be reviewed.</p>
+        <div class="mini-note"><span>♡</span><div><strong>Your time, your space</strong><br><small>Submit a request in just a few steps.</small></div></div>
+      </div>
+      <form id="bookingForm" class="booking-form">
+        <div class="form-title"><h3>Appointment details</h3><span>* Required fields</span></div>
+        <label>Full name *<input name="customerName" placeholder="Enter your name" required maxlength="80"></label>
+        <label>Phone number *<input name="phone" type="tel" placeholder="e.g. 9876543210" required maxlength="20"></label>
+        <label>Home address *<textarea name="address" placeholder="Enter your complete address" required maxlength="300"></textarea></label>
+        <div class="form-row">
+          <label>Choose service *<select name="service" id="service" required><option value="">Select a service</option><option>Facial</option><option>Hair Styling</option><option>Bridal Makeup</option><option>Manicure & Pedicure</option></select></label>
+          <label>Preferred date *<input name="bookingDate" type="date" id="bookingDate" required></label>
+        </div>
+        <label>Additional notes<textarea name="notes" placeholder="Any preferences? (optional)" maxlength="500"></textarea></label>
+        <button class="submit-btn" type="submit">Send booking request <span>→</span></button>
+        <p id="formMessage" class="form-message" role="status"></p>
+        <small class="privacy">Demo application: do not enter sensitive personal information.</small>
+      </form>
+    </section>
+
+    <section class="requests section">
+      <div class="section-heading compact"><p class="eyebrow">YOUR REQUESTS</p><h2>Recent booking requests</h2><p>Requests saved by this demo application.</p></div>
+      <div id="bookingList" class="booking-list"><p class="empty">Loading booking requests…</p></div>
+    </section>
+  </main>
+
+  <footer><a class="brand" href="#"><span class="brand-mark">✦</span> GlowAtHome</a><span>Beauty care, made comfortable.</span></footer>
+  <script src="app.js"></script>
+</body>
+</html>
